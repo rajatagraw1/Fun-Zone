@@ -1,0 +1,63 @@
+body{
+    background-color: khaki;
+}
+.machine{
+    height: 300px;
+    width: 800px;
+    background-color: aqua;
+    margin: 30px;
+    border: solid deeppink 4px;
+    display: flex;
+    box-shadow: gray 20px 20px 20px;
+}
+.slot{
+    height: 250px;
+    width: 250px;
+    background-color: indigo;
+    margin: 30px;
+    font-size: 70pt;
+    text-align: center;
+    border: solid magenta 2px ;
+    line-height: 250px;
+    overflow: hidden;
+    /* animation: spin infinite 0.3s; */
+}
+.btn{
+    font-size: 50pt;
+    font-style: italic;
+    color: gold;
+    box-shadow: gray 10px 10px 10px;
+    background-color: red;
+    margin-left: 50px;
+}
+
+.slot > .value {
+    animation: spin infinite 0.1s;
+}
+.val{   text-align: center;
+    background-color: rgb(52, 46, 139);
+    font-size: 30pt;
+    color: salmon;
+    height: 80px;
+    width: 720px;
+    border-radius: 10px;
+    line-height: 80px;
+    margin: 40px;
+    box-shadow: grey 20px 20px 10px;
+} 
+h1{
+    /* font-size: 20pt; */
+    color: rgb(255, 0, 179);
+    text-align: center;
+    
+}
+
+@keyframes spin{
+    0% {
+        transform: translateY(-200px);
+
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
